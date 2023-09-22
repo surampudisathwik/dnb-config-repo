@@ -44,4 +44,12 @@ eureka:
         defaultZone: http://localhost:8761/eureka/
 customProperty:
     test : subasssss
-    
+management:
+
+  endpoints:
+
+    web:
+
+      exposure:
+
+        include: refresh
