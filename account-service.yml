@@ -43,7 +43,7 @@ eureka:
       serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 customProperty:
-    test : subasssss
+    test : abhi
 management:
 
   endpoints:
