@@ -55,4 +55,4 @@ management:
         include: refresh,health
 
 api:
-  customer: http://localhost: 9010/api/customer
+  customer: http://localhost:9010/api/customer
