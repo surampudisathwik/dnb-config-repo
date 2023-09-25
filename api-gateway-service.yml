@@ -25,3 +25,17 @@ eureka:
     serviceUrl:
 
       defaultZone: http://localhost:8761/eureka/
+
+
+cloud:
+  gateway:
+    routes:
+      - id: CUSTOMER-SERVICE
+        uri: lb://CUSTOMER-SERVICE
+        predicates:
+          - Path=/api/CUSTOMER/**
+          
+      - id: ACCOUNT-SERVICE
+        uri: lb://ACCOUNT-SERVICE
+        predicates:
+          - Path=/api/ACCOUNT/**
