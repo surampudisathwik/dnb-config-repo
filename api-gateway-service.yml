@@ -28,14 +28,13 @@ eureka:
 
 
 cloud:
-  gateway:
-    routes:
-      - id: CUSTOMER-SERVICE
-        uri: lb://CUSTOMER-SERVICE
-        predicates:
-          - Path=/api/CUSTOMER/**
-          
-      - id: ACCOUNT-SERVICE
-        uri: lb://ACCOUNT-SERVICE
-        predicates:
-          - Path=/api/ACCOUNT/**
+    gateway:
+      routes:
+        - id: CUSTOMER-SERVICE
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/api/customer/**
+        - id: ACCOUNT-SERVICE
+          uri: lb://ACCOUNT-SERVICE
+          predicates:
+            - Path=/api/account/**
