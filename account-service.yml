@@ -56,3 +56,5 @@ management:
 
 api:
   customer: http://localhost:9010/api/customer
+api:
+  customer: http://CUSTOMER-SERVICE/api
