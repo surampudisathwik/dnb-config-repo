@@ -16,7 +16,7 @@ management:
 
       exposure:
 
-        include:
+        include: *
 
 eureka:
 
