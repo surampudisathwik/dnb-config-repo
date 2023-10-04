@@ -15,7 +15,7 @@ spring:
         - id: AUTH-SERVICE
           uri: lb://AUTH-SERVICE
           predicates:
-            - Path= /authenticate/**
+            - Path= api/authenticate/**
 server:
   port: 9191
 management:
